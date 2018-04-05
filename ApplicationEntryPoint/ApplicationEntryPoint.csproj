@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{83B70E70-66A1-4A50-A5AC-831517F13BFA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SimpleCSharpProgramAnatomy</RootNamespace>
-    <AssemblyName>SimpleCSharpProgramAnatomy</AssemblyName>
+    <RootNamespace>CSharpConsoleProgram</RootNamespace>
+    <AssemblyName>CSharpConsoleProgram</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,7 +31,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SystemConsole.ProgramBasicConsoleIo</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgramBasicConsoleIo.cs" />
+    <Compile Include="ProgramShowEnvironmentDetails.cs" />
+    <Compile Include="ProgramNoReturnAndParam.cs" />
+    <Compile Include="ProgramWithReturnNoParam.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
