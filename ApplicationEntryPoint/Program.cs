@@ -20,7 +20,7 @@ namespace ApplicationEntryPoint
          */
         static void Main(string[] args) // The Main() method is invoked without instantiate application object.
         {
-            Console.WriteLine("***** The C# Application Entry Point *****");
+            Console.Title = "C# Application Entry Point";
             Console.WriteLine("A void return value, An array of string types as the single input parameter");
             Console.WriteLine();
 

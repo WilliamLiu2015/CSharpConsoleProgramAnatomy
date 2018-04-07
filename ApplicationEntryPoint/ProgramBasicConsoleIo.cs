@@ -9,8 +9,8 @@ namespace SystemConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("***** Basic Console I/O *****");
-
+            Console.Title = "Basic Console I/O";
+            
             Console.WriteLine();
             GetUserData();
 
@@ -21,6 +21,7 @@ namespace SystemConsole
             DisplayMessage();
 
             Console.ReadLine(); // Wait for Enter key to be pressed before shutting down.
+            Console.Clear();
         }
 
         static void GetUserData()
@@ -46,6 +47,9 @@ namespace SystemConsole
         // Make use of format tags embedded within string literals.
         static void FormatNumericalData()
         {
+            ConsoleColor prevColor = Console.BackgroundColor;
+            Console.BackgroundColor = ConsoleColor.Blue;
+
             Console.WriteLine("The value 99999 in various formats:");
             Console.WriteLine("c format: {0:c}", 99999);
             Console.WriteLine("d9 format: {0:d9}", 99999);
@@ -57,6 +61,8 @@ namespace SystemConsole
             Console.WriteLine("e format: {0:e}", 99999);
             Console.WriteLine("X format: {0:X}", 99999);
             Console.WriteLine("x format: {0:x}", 99999);
+
+            Console.BackgroundColor = prevColor;
         }
 
         // Make use of string formatting characters 
