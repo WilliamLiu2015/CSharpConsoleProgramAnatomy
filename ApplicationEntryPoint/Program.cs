@@ -3,6 +3,9 @@
 namespace ApplicationEntryPoint
 {
     /*
+     * Every C# executable program must have a type defining a Main() method, which
+     * serves as the program's entry point.
+     * 
      * The class defining Main() is termed the application object and 
      * an executable application could have more than one application object.
      * 
